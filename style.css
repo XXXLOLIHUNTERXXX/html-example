@@ -1,18 +1,57 @@
-.container{
-    height:100vh;
-    width:100vw;
-    background-image: url(home_bg.jpg);
-    background-size: cover;}
-
-
-h2 {
-    position	: absolute;
-    top		:  630px;
-    left		: 10px;
-    width		: 100%;
-    font-size:100px;
-    color:white;
-}
 body {
     margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    background-image: url("tmb_100560_4964.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 5px black;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+
+.content-container {
+    height: 100vh;
+}
+
+.element-button {
+    user-select:none;
+    background: #e4fff1;
+    box-shadow: 4px 4px 5px black;
+    border: #5d5d5d 1px solid;
+    border-radius: 20px;
+    width: 10vw;
+    height: 4vw;
+    font-size: 3vw;
+    font-family: 'Lacquer', sans-serif;
+    text-align: center;
+    margin: 1vw;
+}
+
+.element-button:hover {
+    background: #c4dace;
+}
+
+.element-button:active {
+    background: #a9c7be;
+}
+
+.text-button {
+    color: #8fcfd0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    margin-left: auto;
+    margin-top: 2px;
+}
+
+.active-button {
+    text-decoration: none;
 }
